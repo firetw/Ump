@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+        Unknown = -1,
+        Numeric = 0,
+        String = 1,
+        Formula = 2,
+        Blank = 3,
+        Boolean = 4,
+        Error = 5,
+-->
+<root>
+  <Columns>
+    <Column LabelCn="交易时间" LabelEn="start_time"  Width="6200" CellType="1"></Column>
+    <Column LabelCn="商家编号" LabelEn="merid"  Width="6200" CellType="1"></Column>
+    <Column LabelCn="商品编号" LabelEn="goodsid" Width="6200" CellType="1"></Column>
+    <Column LabelCn="手机号" LabelEn="mobileid"  Width="6200" CellType="1"></Column>
+    <Column LabelCn="订单号" LabelEn="orderid" Width="6200" CellType="1"></Column>
+    <Column LabelCn="金额(分)" LabelEn="amount"  Width="6200" CellType="0"></Column>
+    <Column LabelCn="交易状态" LabelEn="retmsg" Width="6200" CellType="1"></Column>
+    <Column LabelCn="确认状态" LabelEn="c_retcode"  Width="6200" CellType="1"></Column>
+  </Columns>
+</root>

@@ -1,0 +1,76 @@
+2014-08-08 10:53:00 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ2014080712890&merDate=&amount=1&amtType=02&bankType=3&notifyUrl=&merPriv=&expand=&version=3.0
+
+2014-08-08 10:53:00 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT ="9996|100|576216|20090402|0000|下订单成功|3.0|wlItyXiYPPm/2QcSzf8wrl/XxzkF8m9aN14qlBBvhB30pFJE7zR4cMRO2Ods">
+
+2014-08-08 10:53:00 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+
+2014-08-08 11:41:14 ERROR Umpay.Hjdl.Config 
+    System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+
+2014-08-08 11:41:49 ERROR Umpay.Hjdl.Config 
+    System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+
+2014-08-08 11:41:52 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ20140808114149223&merDate=20140808&amount=1&amtType=02&bankType=3&notifyUrl=http://203.171.225.8/hjdl/confirm.aspx&merPriv=&expand=&version=3.0
+
+2014-08-08 11:41:52 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT ="9996|100|576216|20090402|0000|下订单成功|3.0|wlItyXiYPPm/2QcSzf8wrl/XxzkF8m9aN14qlBBvhB30pFJE7zR4cMRO2Ods">
+
+2014-08-08 11:41:52 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+
+2014-08-08 11:42:28 ERROR Umpay.Hjdl.Config 
+    System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+
+2014-08-08 11:43:57 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ20140808114341980&merDate=20140808&amount=1&amtType=02&bankType=3&notifyUrl=http://203.171.225.8/hjdl/confirm.aspx&merPriv=&expand=&version=3.0
+
+2014-08-08 11:43:57 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT ="9996|100|576216|20090402|0000|下订单成功|3.0|wlItyXiYPPm/2QcSzf8wrl/XxzkF8m9aN14qlBBvhB30pFJE7zR4cMRO2Ods">
+
+2014-08-08 11:43:57 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+
+2014-08-08 11:48:28 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ20140808114824809&merDate=20140808&amount=1&amtType=02&bankType=3&notifyUrl=http://203.171.225.8/hjdl/confirm.aspx&merPriv=&expand=&version=3.0
+
+2014-08-08 11:48:28 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT ="9996|100|576216|20090402|0000|下订单成功|3.0|wlItyXiYPPm/2QcSzf8wrl/XxzkF8m9aN14qlBBvhB30pFJE7zR4cMRO2Ods">
+
+2014-08-08 11:48:28 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+
+2014-08-08 15:59:35 ERROR Query 
+    System.Web.HttpException (0x80004005): DataBinding:“System.Data.DataRowView”不包含名为“ID”的属性。
+   在 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 Query.BindGV() 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 65
+
+2014-08-08 23:09:50 INFO  Umpay.Hjdl.UmpayHelper 
+    签名内容:merId=6882&goodsId=001&mobileId=13683815260&orderId=YZ2014080823084587&merDate=20140808&amount=100&amtType=02&bankType=3&notifyUrl=http://203.171.225.8/confirm.aspx&merPriv=&expand=&version=3.0
+
+2014-08-08 23:09:50 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13683815260&orderId=YZ2014080823084587&merDate=20140808&amount=100&amtType=02&bankType=3&notifyUrl=http%3a%2f%2f203.171.225.8%2fconfirm.aspx&merPriv=&expand=&version=3.0&sign=z4JJY5nK4gn0BvrgdYgZv5nayObQjQmkljThdZytxAL7xgb9Dm4wv2mQiSkUxH%2bIuO0Qw7CkqA1%2bqhr4UqBYAgRRo5sP%2bjK7Ld9mg45H%2bXUERgWDnwOeJ6yufMSFPxNtKlTeUi%2fDrRJzcKqD3MA7dB3eFOUssM4x8TpCJ2lQsq4%3d
+
+2014-08-08 23:09:50 INFO  Umpay.Hjdl.UmpayHelper 
+    Url:http://payment.umpay.com/hfwebbusi/pay/direct.do?merId=6882&goodsId=001&mobileId=13683815260&orderId=YZ2014080823084587&merDate=20140808&amount=100&amtType=02&bankType=3&notifyUrl=http%3a%2f%2f203.171.225.8%2fconfirm.aspx&merPriv=&expand=&version=3.0&sign=z4JJY5nK4gn0BvrgdYgZv5nayObQjQmkljThdZytxAL7xgb9Dm4wv2mQiSkUxH%2bIuO0Qw7CkqA1%2bqhr4UqBYAgRRo5sP%2bjK7Ld9mg45H%2bXUERgWDnwOeJ6yufMSFPxNtKlTeUi%2fDrRJzcKqD3MA7dB3eFOUssM4x8TpCJ2lQsq4%3d
+
+2014-08-08 23:09:50 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT="6882|001|YZ2014080823084587|20140808|0000|下订单成功|3.0|CyARBgE84X/S6KXXbax1Ts2KdREQKzOWriSh1eB7oI7o8RyN+m85ORvGoCse1tGk+W7oueRM+m7k8bnr3XVOXlIdHnzDZjX0eu2KqgrJGZJ9aHrj0aD/2rvfMaKpyKRMBuW1QvsqzC6AJ/MqXx7vuaDIHR/d2/xWoXH1RZxli8Q=">
+
+2014-08-08 23:09:50 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+

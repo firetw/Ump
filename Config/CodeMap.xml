@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <item code="0000"><![CDATA[下订单成功]]></item>
+  <item code="1110"><![CDATA[平台内部错误]]></item>
+  <item code="1111"><![CDATA[参数不全]]></item>
+  <item code="1112"><![CDATA[参数不正确]]></item>
+  <item code="1113"><![CDATA[商户号不正确]]></item>
+  <item code="1114"><![CDATA[订单号不符合格式]]></item>
+  <item code="1115"><![CDATA[日期不符合要求]]></item>
+  <item code="1116"><![CDATA[金额无效]]></item>
+  <item code="1117"><![CDATA[货币类型不正确]]></item>
+  <item code="1118"><![CDATA[交易类型不正确]]></item>
+  <item code="1119"><![CDATA[页面返回地址不正确]]></item>
+  <item code="1120"><![CDATA[版本号不正确]]></item>
+  <item code="1121"><![CDATA[商品号不正确]]></item>
+  <item code="1122"><![CDATA[手机号不正确，请输入中国移动手机号]]></item>
+</root>

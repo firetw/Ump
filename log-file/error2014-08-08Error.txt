@@ -1,0 +1,21 @@
+2014-08-08 11:41:14
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+2014-08-08 11:41:49
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+2014-08-08 11:42:28
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Umpay.Hjdl.Config..cctor() 位置 g:\chenshuang\UmpayHelper\Config.cs:行号 35
+2014-08-08 15:59:35
+System.Web.HttpException (0x80004005): DataBinding:“System.Data.DataRowView”不包含名为“ID”的属性。
+   在 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 Query.BindGV() 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 65

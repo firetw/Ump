@@ -1,0 +1,35 @@
+2014-08-09 07:52:47 ERROR Query 
+    System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 Umpay.Hjdl.ExportItem.get_Columns() 位置 g:\chenshuang\UmpayHelper\ExportItem.cs:行号 32
+   在 Umpay.Hjdl.NPOIHelper.GenerateHeader(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 96
+   在 Umpay.Hjdl.NPOIHelper.Export(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 148
+   在 Query.btExport_Click(Object sender, EventArgs e) 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 63
+
+2014-08-09 07:52:59 ERROR Query 
+    System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 Umpay.Hjdl.ExportItem.get_Columns() 位置 g:\chenshuang\UmpayHelper\ExportItem.cs:行号 32
+   在 Umpay.Hjdl.NPOIHelper.GenerateHeader(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 96
+   在 Umpay.Hjdl.NPOIHelper.Export(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 148
+   在 Query.btExport_Click(Object sender, EventArgs e) 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 63
+
+2014-08-09 09:37:04 INFO  Umpay.Hjdl.UmpayHelper 
+    签名内容:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ2014080090923385&merDate=20140809&amount=100&amtType=02&bankType=3&notifyUrl=http://203.171.225.8/confirm.aspx&merPriv=&expand=&version=3.0
+
+2014-08-09 09:37:04 INFO  Umpay.Hjdl.UmpayHelper 
+    提交请求:merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ2014080090923385&merDate=20140809&amount=100&amtType=02&bankType=3&notifyUrl=http%3a%2f%2f203.171.225.8%2fconfirm.aspx&merPriv=&expand=&version=3.0&sign=o%2bwCQtG%2fSDDVAoPmOmW5DDWZ%2fsysIwqfdvLBKU1sy32IcsbA8blw5g6SR%2bzxMZ01ljWJZJrHevQkZvnWFvDVGWbpq%2fQhQ5XMDJL4u1M2VlmQjUrRlKXFzoHqtGD58AxJmWH%2b5I%2fr287paTIA%2beoWOyczVV0cCND2vXHxgqggiwM%3d
+
+2014-08-09 09:37:04 INFO  Umpay.Hjdl.UmpayHelper 
+    Url:http://payment.umpay.com/hfwebbusi/pay/direct.do?merId=6882&goodsId=001&mobileId=13525510756&orderId=YZ2014080090923385&merDate=20140809&amount=100&amtType=02&bankType=3&notifyUrl=http%3a%2f%2f203.171.225.8%2fconfirm.aspx&merPriv=&expand=&version=3.0&sign=o%2bwCQtG%2fSDDVAoPmOmW5DDWZ%2fsysIwqfdvLBKU1sy32IcsbA8blw5g6SR%2bzxMZ01ljWJZJrHevQkZvnWFvDVGWbpq%2fQhQ5XMDJL4u1M2VlmQjUrRlKXFzoHqtGD58AxJmWH%2b5I%2fr287paTIA%2beoWOyczVV0cCND2vXHxgqggiwM%3d
+
+2014-08-09 09:37:04 INFO  Umpay.Hjdl.UmpayHelper 
+    收到的内容:<META NAME="MobilePayPlatform" CONTENT="6882|001|YZ2014080090923385|20140809|0000|下订单成功|3.0|cxePhX3vxi4Fmu4MWGwjJRZiLzzwMGsS6KUdkFQ6z0Y86/rJJwO8+RTQKj28dV/ViU+tMWN6n22HeQbsgN0VFZ60xqhHKgN8nl6JLlEKMAke/gYH/XOQFpl7+OgBv0VOJi+8OApPoYe/ddEzTsjMs6FjOj7ZLvSbSfkylwOC58E=">
+
+2014-08-09 09:37:05 INFO  Umpay.Hjdl.UmpayHelper 
+    支付请求入库成功
+

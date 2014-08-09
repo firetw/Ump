@@ -1,0 +1,134 @@
+﻿USE [Hjdl]
+GO
+
+/****** Object:  Table [dbo].[TRAN_FLOW]    Script Date: 2014/8/9 11:28:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TRAN_FLOW](
+	[RECORD_ID] [int] IDENTITY(1,1) NOT NULL,
+	[MERID] [nvarchar](100) NOT NULL,
+	[GOODSID] [nvarchar](255) NULL,
+	[MOBILEID] [nvarchar](50) NULL,
+	[ORDERID] [nvarchar](255) NULL,
+	[MERDATE] [nvarchar](100) NULL,
+	[AMOUNT] [float] NULL,
+	[AMTTYPE] [nvarchar](50) NULL,
+	[BANKTYPE] [nvarchar](50) NULL,
+	[NOTIFYURL] [nvarchar](255) NULL,
+	[MERPRIV] [nvarchar](255) NULL,
+	[EXPAND] [nvarchar](255) NULL,
+	[VERSION] [nvarchar](255) NULL,
+	[SIGN] [nvarchar](255) NULL,
+	[RETCODE] [nvarchar](50) NULL, --接收到服务器返回的消息号
+	[RETMSG] [nvarchar](255) NULL,---接收到服务器返回的消息
+	[RETSIGN] [nvarchar](255) NULL,---接收到服务器返回的签名
+	[START_TIME] [datetime] NULL,
+	[END_TIME] [datetime] NULL,
+	[INSERT_TIME] [datetime] NULL
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[TRAN_FLOW] ADD  CONSTRAINT [DF__TRAN_FLOW__INSER__145C0A3F]  DEFAULT (getdate()) FOR [INSERT_TIME]
+GO
+
+
+USE [Hjdl]
+GO
+
+/****** Object:  Index [IX_TRAN_FLOW]    Script Date: 2014/8/9 11:56:58 ******/
+CREATE NONCLUSTERED INDEX [IX_TRAN_FLOW] ON [dbo].[TRAN_FLOW]
+(
+	[MERID] ASC,
+	[ORDERID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+USE [Hjdl]
+GO
+
+/****** Object:  Index [IX_TRAN_TIME]    Script Date: 2014/8/9 11:57:09 ******/
+CREATE NONCLUSTERED INDEX [IX_TRAN_TIME] ON [dbo].[TRAN_FLOW]
+(
+	[START_TIME] ASC,
+	[END_TIME] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+USE [Hjdl]
+GO
+
+/****** Object:  Table [dbo].[TRAN_CONFIRM]    Script Date: 2014/8/9 11:57:39 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TRAN_CONFIRM](
+	[RECORD_ID] [int] IDENTITY(1,1) NOT NULL,
+	[MERID] [nvarchar](100) NOT NULL,
+	[GOODSID] [nvarchar](255) NULL,
+	[ORDERID] [nvarchar](255) NULL,
+	[MERDATE] [nvarchar](100) NULL,
+	[PAYDATE] [nvarchar](50) NULL,
+	[AMOUNT] [nvarchar](255) NULL,
+	[AMTTYPE] [nvarchar](50) NULL,
+	[BANKTYPE] [nvarchar](50) NULL,
+	[MOBILEID] [nvarchar](50) NULL,
+	[TRANSTYPE] [nvarchar](50) NULL,
+	[SETTLEDATE] [nvarchar](50) NULL,
+	[MERPRIV] [nvarchar](255) NULL,
+	[VERSION] [nvarchar](255) NULL,
+	[SIGN] [nvarchar](255) NULL,
+	[RETCODE] [nvarchar](50) NULL,
+	[VENDOR_RETMSG] [nvarchar](255) NULL,
+	[VENDOR_RETSIGN] [nvarchar](255) NULL,
+	[VENDOR_RETCODE] [nvarchar](50) NULL,
+	[START_TIME] [datetime] NULL,
+	[END_TIME] [datetime] NULL,
+	[INSERT_TIME] [datetime] NULL
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[TRAN_CONFIRM] ADD  CONSTRAINT [DF__TRAN_CONF__INSER__164452B1]  DEFAULT (getdate()) FOR [INSERT_TIME]
+GO
+
+USE [Hjdl]
+GO
+
+/****** Object:  Index [IX_TIME]    Script Date: 2014/8/9 11:57:55 ******/
+CREATE NONCLUSTERED INDEX [IX_TIME] ON [dbo].[TRAN_CONFIRM]
+(
+	[START_TIME] ASC,
+	[END_TIME] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+USE [Hjdl]
+GO
+
+/****** Object:  Index [IX_TRAN_CONFIRM]    Script Date: 2014/8/9 11:58:04 ******/
+CREATE NONCLUSTERED INDEX [IX_TRAN_CONFIRM] ON [dbo].[TRAN_CONFIRM]
+(
+	[ORDERID] ASC,
+	[MERID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+
+
+
+
+
+
+
+
+
+
+

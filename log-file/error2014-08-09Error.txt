@@ -1,0 +1,18 @@
+2014-08-09 07:52:47
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 Umpay.Hjdl.ExportItem.get_Columns() 位置 g:\chenshuang\UmpayHelper\ExportItem.cs:行号 32
+   在 Umpay.Hjdl.NPOIHelper.GenerateHeader(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 96
+   在 Umpay.Hjdl.NPOIHelper.Export(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 148
+   在 Query.btExport_Click(Object sender, EventArgs e) 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 63
+2014-08-09 07:52:59
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 Umpay.Hjdl.ExportItem.get_Columns() 位置 g:\chenshuang\UmpayHelper\ExportItem.cs:行号 32
+   在 Umpay.Hjdl.NPOIHelper.GenerateHeader(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 96
+   在 Umpay.Hjdl.NPOIHelper.Export(ExportItem item) 位置 g:\chenshuang\UmpayHelper\NPOIHelper.cs:行号 148
+   在 Query.btExport_Click(Object sender, EventArgs e) 位置 g:\chenshuang\UmpayPalatform\Query.aspx.cs:行号 63
