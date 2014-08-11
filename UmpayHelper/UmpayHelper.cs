@@ -84,8 +84,7 @@ namespace Umpay.Hjdl
             {
                 if (request.retCode != null)
                 {
-                    if (Config.CodeMap.ContainsKey(request.retCode))
-                        return Config.CodeMap[request.retCode];
+                    return request.retMsg;
                 }
                 return "支付出现未知异常";
             }

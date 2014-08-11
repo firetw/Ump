@@ -7,6 +7,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UmpayPalatform(1)", "http:/
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{6d48331e-d152-4706-b2c0-7f0837e55d43}|UmpayHelper.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_15862"
 		Debug.AspNetCompiler.PhysicalPath = "..\UmpayPalatform\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_15862\"

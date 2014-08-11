@@ -74,7 +74,7 @@ GROUP BY ORDERID]]>
     </statement>
 
     <statement id="QueryRequestByOrderId"  resultClass="string"   parameterClass="string">
-      <![CDATA[SELECT CASE A.RETCODE+B.VENDOR_RETCODE WHEN '00000000' THEN '交易成功'
+      <![CDATA[SELECT CASE  B.VENDOR_RETCODE WHEN '0000' THEN '交易成功'
 ELSE '交易失败' END  TRAN_MEMO
 	  FROM TRAN_FLOW  A
       LEFT OUTER JOIN

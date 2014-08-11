@@ -88,7 +88,7 @@
                                     <span><%#Eval("orderid") %></span>
                                 </ItemTemplate>
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="金额" SortExpression="amount">
+                            <asp:TemplateField HeaderText="金额(分)" SortExpression="amount">
                                 <ItemStyle Font-Size="12px" Width="80px" HorizontalAlign="Left" />
                                 <ItemTemplate>
                                     <span><%#Eval("amount") %></span>
