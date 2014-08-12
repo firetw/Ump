@@ -62,7 +62,16 @@ namespace Umpay.Hjdl
         /// <returns></returns>
         public string TranFormat()
         {
-            return string.Format("merId={0}|goodsId={1}|orderId={2}|merDate={3}|retCode={4}|retMsg={5}|version={6}",
+            //return string.Format("merId={0}|goodsId={1}|orderId={2}|merDate={3}|retCode={4}|retMsg={5}|version={6}",
+            //    merId,
+            //    goodsId,
+            //    orderId,
+            //    merDate,
+            //    retCode,
+            //    retMsg,
+            //    version);
+
+            return string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}",
                 merId,
                 goodsId,
                 orderId,

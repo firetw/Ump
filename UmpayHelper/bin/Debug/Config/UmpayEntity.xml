@@ -74,7 +74,7 @@ GROUP BY ORDERID]]>
     </statement>
 
     <statement id="QueryRequestByOrderId"  resultClass="string"   parameterClass="string">
-      <![CDATA[SELECT CASE A.RETCODE+B.VENDOR_RETCODE WHEN '00000000' THEN '交易成功'
+      <![CDATA[SELECT CASE  B.VENDOR_RETCODE WHEN '0000' THEN '交易成功'
 ELSE '交易失败' END  TRAN_MEMO
 	  FROM TRAN_FLOW  A
       LEFT OUTER JOIN
@@ -96,7 +96,7 @@ ELSE '交易失败' END  TRAN_MEMO
     </statement>
 
     <statement id="QueryReportResult"  resultClass="data"   parameterClass="Hashtable">
-      SELECT A.START_TIME,A.MERID,A.GOODSID,A.MOBILEID,A.ORDERID,A.AMOUNT,A.RETCODE,A.RETMSG,CASE WHEN B.VENDOR_RETCODE IS NULL THEN '用户未确认'
+      SELECT DISTINCT A.START_TIME,A.MERID,A.GOODSID,A.MOBILEID,A.ORDERID,A.AMOUNT,A.RETCODE,A.RETMSG,CASE WHEN B.VENDOR_RETCODE IS NULL THEN '用户未确认'
       WHEN B.VENDOR_RETCODE='1111' THEN '交易取消' WHEN B.VENDOR_RETCODE='0000' THEN '交易成功' ELSE '未知状态'  END C_RETCODE
       FROM TRAN_FLOW  A
       LEFT OUTER JOIN

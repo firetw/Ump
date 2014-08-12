@@ -137,7 +137,7 @@ public partial class Confirm : System.Web.UI.Page
         UmpayHelper.Confirm(req);
 
         string signStr = res.TranFormat();
-        signStr = signStr + "&sign=" + SignUtil.sign(signStr);
+        signStr = signStr + "|" + SignUtil.sign(signStr);
         _log.Info(string.Format("返回的内容:{0}", signStr));
         Response.Write(string.Format("<META NAME=\"MobilePayPlatform\" CONTENT=\"{0}\">", signStr));
     }
